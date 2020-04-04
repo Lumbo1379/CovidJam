@@ -9,10 +9,13 @@ public class StoreSuckables : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (((1 << other.gameObject.layer) & CollectMask) != 0)
+        if (Input.GetMouseButton(0))
         {
-            Vacuum.StoreObject(other.gameObject);
-            other.gameObject.SetActive(false);
+            if (((1 << other.gameObject.layer) & CollectMask) != 0)
+            {
+                Vacuum.StoreObject(other.gameObject);
+                other.gameObject.SetActive(false);
+            }
         }
     }
 }

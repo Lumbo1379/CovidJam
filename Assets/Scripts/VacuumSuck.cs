@@ -9,6 +9,8 @@ public class VacuumSuck : MonoBehaviour
     [Range(0, 100)] public float AttractPower;
     [Range(0, 100)] public float Range;
     [Range(0, 3)] public float AttractArea;
+    [Range(0, 5000)] public float ShootForce;
+    [Range(0, 1)] public float ShootCooldown;
     public Transform SuckOrigin;
     public LayerMask SuckMask;
 
@@ -16,12 +18,15 @@ public class VacuumSuck : MonoBehaviour
     private List<GameObject> _currentAttractedObjects;
     private List<GameObject> _attractedObjectsInFrame;
     private List<GameObject> _storedObjects;
+    private bool _shootBlocked;
 
     private void Start()
     {
         _camera = Camera.main;
         _currentAttractedObjects = new List<GameObject>();
         _attractedObjectsInFrame = new List<GameObject>();
+        _storedObjects = new List<GameObject>();
+        _shootBlocked = false;
     }
 
     private void FixedUpdate()
@@ -34,6 +39,12 @@ public class VacuumSuck : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
             ReleaseObjects();
+
+        if (Input.GetMouseButton(1))
+        {
+            if (!_shootBlocked)
+                ShootStoredObject();
+        }
     }
 
     private void DrawRay()
@@ -104,6 +115,27 @@ public class VacuumSuck : MonoBehaviour
 
         _storedObjects.Add(obj);
         _currentAttractedObjects.Remove(obj); 
+    }
+
+    private void ShootStoredObject()
+    {
+        if (_storedObjects.Count > 0)
+        {
+            _shootBlocked = true;
+            Invoke("UnblockShoot", ShootCooldown);
+
+            var obj = _storedObjects.Dequeue();
+            obj.SetActive(true);
+
+            obj.transform.position = SuckOrigin.transform.position;
+            obj.GetComponent<GetSucked>().Release();
+            obj.GetComponent<Rigidbody>().AddForce(SuckOrigin.transform.forward * ShootForce);
+        }
+    }
+
+    private void UnblockShoot()
+    {
+        _shootBlocked = false;
     }
 
     private Collider[] ScanForColliders(Vector3 hit)
