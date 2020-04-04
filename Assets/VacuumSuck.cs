@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting;
 using UnityEngine;
 
 public class VacuumSuck : MonoBehaviour
@@ -14,6 +15,7 @@ public class VacuumSuck : MonoBehaviour
     private Camera _camera;
     private List<GameObject> _currentAttractedObjects;
     private List<GameObject> _attractedObjectsInFrame;
+    private List<GameObject> _storedObjects;
 
     private void Start()
     {
@@ -94,6 +96,14 @@ public class VacuumSuck : MonoBehaviour
             currentAttractedObject.GetComponent<GetSucked>().Release();
 
         _currentAttractedObjects.Clear();
+    }
+
+    public void StoreObject(GameObject obj)
+    {
+        obj.SetActive(false);
+
+        _storedObjects.Add(obj);
+        _currentAttractedObjects.Remove(obj); 
     }
 
     private Collider[] ScanForColliders(Vector3 hit)
