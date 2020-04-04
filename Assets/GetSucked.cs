@@ -10,14 +10,18 @@ public class GetSucked : MonoBehaviour
 
     [Range(0, 10)] public float ShrinkSpeed;
     [Range(0, 10)] public float BalloonSpeed;
+    [Range(0, 5)] public float ElectricityAmount;
 
     private Rigidbody _rb;
     private Vector3 _originalScale;
     private float _t;
+    private Material _electricityMaterialInstance;
 
     private void Awake()
     {
         _originalScale = transform.localScale;
+        _electricityMaterialInstance = GetComponent<Renderer>().materials[1];
+        _electricityMaterialInstance.SetFloat("Vector1_4C910460", 0);
     }
 
     private void OnEnable()
@@ -26,6 +30,7 @@ public class GetSucked : MonoBehaviour
         _rb.useGravity = false;
         _rb.velocity = Vector3.zero;
         _t = 0;
+        _electricityMaterialInstance.SetFloat("Vector1_4C910460", ElectricityAmount);
     }
 
     private void Update()
@@ -57,5 +62,6 @@ public class GetSucked : MonoBehaviour
     {
         _rb.useGravity = true;
         _t = 0;
+        _electricityMaterialInstance.SetFloat("Vector1_4C910460", 0);
     }
 }

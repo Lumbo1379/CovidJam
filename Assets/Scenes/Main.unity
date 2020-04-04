@@ -1035,6 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 1004735685}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &883441142
 Transform:
   m_ObjectHideFlags: 19
@@ -1314,6 +1315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShrinkSpeed: 0.75
   BalloonSpeed: 1
+  ElectricityAmount: 2
 --- !u!54 &991372800
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1360,7 +1362,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 03e2bb0c108c70a4ca74edcab4f3f18a, type: 2}
+  - {fileID: 2100000, guid: fb8f220186e74f74f9624d490fd6ccea, type: 2}
+  - {fileID: 2100000, guid: c494e8d858317674fa7bd8b6f4e5d665, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1484,7 +1487,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 03e2bb0c108c70a4ca74edcab4f3f18a, type: 2}
+  - {fileID: 2100000, guid: fb8f220186e74f74f9624d490fd6ccea, type: 2}
+  - {fileID: 2100000, guid: c494e8d858317674fa7bd8b6f4e5d665, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1541,6 +1545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShrinkSpeed: 0.75
   BalloonSpeed: 1
+  ElectricityAmount: 2
 --- !u!1 &1374189672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShrinkSpeed: 0.75
   BalloonSpeed: 1
+  ElectricityAmount: 2
 --- !u!54 &1397979351
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1714,7 +1720,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 03e2bb0c108c70a4ca74edcab4f3f18a, type: 2}
+  - {fileID: 2100000, guid: fb8f220186e74f74f9624d490fd6ccea, type: 2}
+  - {fileID: 2100000, guid: c494e8d858317674fa7bd8b6f4e5d665, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1792,6 +1799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShrinkSpeed: 0.75
   BalloonSpeed: 1
+  ElectricityAmount: 2
 --- !u!54 &1539622633
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1838,7 +1846,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 03e2bb0c108c70a4ca74edcab4f3f18a, type: 2}
+  - {fileID: 2100000, guid: fb8f220186e74f74f9624d490fd6ccea, type: 2}
+  - {fileID: 2100000, guid: c494e8d858317674fa7bd8b6f4e5d665, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
