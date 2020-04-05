@@ -11,6 +11,8 @@ public class GetSucked : MonoBehaviour
     [Range(0, 10)] public float ShrinkSpeed;
     [Range(0, 10)] public float BalloonSpeed;
     [Range(0, 5)] public float ElectricityAmount;
+    public int MaterialElementID;
+    public GameObject ChildRenderer;
 
     private Rigidbody _rb;
     private Vector3 _originalScale;
@@ -20,7 +22,9 @@ public class GetSucked : MonoBehaviour
     private void Awake()
     {
         _originalScale = transform.localScale;
-        _electricityMaterialInstance = GetComponent<Renderer>().materials[1];
+
+        _electricityMaterialInstance = ChildRenderer == null ? GetComponent<Renderer>().materials[MaterialElementID] : ChildRenderer.GetComponent<Renderer>().materials[MaterialElementID];
+
         _electricityMaterialInstance.SetFloat("Vector1_4C910460", 0);
     }
 

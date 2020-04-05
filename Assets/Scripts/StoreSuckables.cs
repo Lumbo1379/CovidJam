@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StoreSuckables : MonoBehaviour
 {
+    [Range(0, 5)] public float MinBoundSizeToStore;
     public VacuumSuck Vacuum;
     public LayerMask CollectMask;
 
@@ -13,8 +14,19 @@ public class StoreSuckables : MonoBehaviour
         {
             if (((1 << other.gameObject.layer) & CollectMask) != 0)
             {
-                Vacuum.StoreObject(other.gameObject);
-                other.gameObject.SetActive(false);
+                var getSucked = other.gameObject.GetComponent<GetSucked>();
+
+                float boundSize = getSucked.ChildRenderer == null
+                    ? other.gameObject.GetComponent<Renderer>().bounds.size.y
+                    : getSucked.ChildRenderer.GetComponent<Renderer>().bounds.size.y;
+
+                Debug.Log(boundSize);
+
+                if (boundSize <= MinBoundSizeToStore)
+                {
+                    Vacuum.StoreObject(other.gameObject);
+                    other.gameObject.SetActive(false);
+                }
             }
         }
     }
