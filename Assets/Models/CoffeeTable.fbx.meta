@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: dafa4332ba80ec84a85eda2d8c3d3dac
+guid: 79e727d81c95f1d458e6762b65975a7b
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Dark_Bronze
-    second: {fileID: 2100000, guid: 85bc441627e057349b0c8df6bdfd1b70, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Dark_Wood.002
-    second: {fileID: 2100000, guid: 3c388177ed7057d4dba9478bd9c131ac, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Medium_Wood.002
-    second: {fileID: 2100000, guid: 5ac7a25285cd2fb45a7d58864d3f4475, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
