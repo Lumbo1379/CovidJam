@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31d29805f1b3824388724e8a0219307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShrinkSpeed: 0.75
+  ShrinkSpeed: 1.5
   BalloonSpeed: 1
   ElectricityAmount: 2
   MaterialElementID: 2
