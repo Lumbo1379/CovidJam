@@ -23,10 +23,7 @@ public class StoreSuckables : MonoBehaviour
                 Debug.Log(boundSize);
 
                 if (boundSize <= MinBoundSizeToStore)
-                {
                     Vacuum.StoreObject(other.gameObject);
-                    other.gameObject.SetActive(false);
-                }
             }
         }
     }

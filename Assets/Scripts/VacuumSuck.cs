@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class VacuumSuck : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class VacuumSuck : MonoBehaviour
     [Range(0, 3)] public float AttractArea;
     [Range(0, 5000)] public float ShootForce;
     [Range(0, 1)] public float ShootCooldown;
+    [Range(0, 100)] public float MaxItemsStored;
+    public Transform Meter;
     public Transform SuckOrigin;
     public LayerMask SuckMask;
 
@@ -45,6 +48,8 @@ public class VacuumSuck : MonoBehaviour
             if (!_shootBlocked)
                 ShootStoredObject();
         }
+
+        Meter.localScale = new Vector3(Meter.localScale.x, _storedObjects.Count / MaxItemsStored, Meter.localScale.z);
     }
 
     private void DrawRay()
@@ -111,6 +116,8 @@ public class VacuumSuck : MonoBehaviour
 
     public void StoreObject(GameObject obj)
     {
+        if (_storedObjects.Count >= MaxItemsStored) return;
+
         obj.SetActive(false);
 
         _storedObjects.Add(obj);
