@@ -328,6 +328,7 @@ GameObject:
   - component: {fileID: 6644186642481687835}
   - component: {fileID: 7200526743270404193}
   - component: {fileID: 3728608182574359290}
+  - component: {fileID: 4882538285369580024}
   m_Layer: 10
   m_Name: TV Stand
   m_TagString: Untagged
@@ -399,3 +400,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9053566, y: 0.69591475, z: 0.81893414}
   m_Center: {x: -0.003782908, y: 0.36931762, z: 0.09053298}
+--- !u!114 &4882538285369580024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7325711910205709953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 3

@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 7987058245813213152}
   - component: {fileID: 3262065302806409822}
   - component: {fileID: 3941512151545513623}
+  - component: {fileID: -3234373235594860725}
   m_Layer: 10
   m_Name: Oven
   m_TagString: Untagged
@@ -398,3 +399,16 @@ MonoBehaviour:
   ElectricityAmount: 2
   MaterialElementID: 3
   ChildRenderer: {fileID: 2150314595823489454}
+--- !u!114 &-3234373235594860725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158244118181279299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 0

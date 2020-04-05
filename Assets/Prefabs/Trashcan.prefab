@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 5238911654864272697}
   - component: {fileID: 8913737094897414260}
   - component: {fileID: 3188398836291355913}
+  - component: {fileID: 4636893417496130247}
   m_Layer: 10
   m_Name: Trashcan
   m_TagString: Untagged
@@ -238,3 +239,16 @@ MonoBehaviour:
   ElectricityAmount: 2
   MaterialElementID: 1
   ChildRenderer: {fileID: 630805872992145684}
+--- !u!114 &4636893417496130247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8082211061672895114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 2

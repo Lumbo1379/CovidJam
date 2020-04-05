@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2438887513973583033}
   - component: {fileID: 7006992457922950268}
   - component: {fileID: 7651814162049298347}
+  - component: {fileID: -7016924262645562014}
   m_Layer: 10
   m_Name: Sink
   m_TagString: Untagged
@@ -86,6 +87,19 @@ MonoBehaviour:
   ElectricityAmount: 2
   MaterialElementID: 2
   ChildRenderer: {fileID: 7154438969874054767}
+--- !u!114 &-7016924262645562014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432838979323451264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 13
 --- !u!1 &2323339595479413519
 GameObject:
   m_ObjectHideFlags: 0

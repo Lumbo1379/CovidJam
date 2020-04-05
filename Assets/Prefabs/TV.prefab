@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 8289637184325703263}
   - component: {fileID: 4259993842791183728}
   - component: {fileID: 5075457866360236085}
+  - component: {fileID: -340730422225872134}
   m_Layer: 10
   m_Name: TV
   m_TagString: Untagged
@@ -160,3 +161,16 @@ MonoBehaviour:
   ElectricityAmount: 2
   MaterialElementID: 2
   ChildRenderer: {fileID: 5678664468504443799}
+--- !u!114 &-340730422225872134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965628665611701857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 7

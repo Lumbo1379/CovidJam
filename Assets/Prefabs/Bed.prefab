@@ -403,6 +403,7 @@ GameObject:
   - component: {fileID: 8008210754210296195}
   - component: {fileID: 8008210754210296194}
   - component: {fileID: 8008210754210296253}
+  - component: {fileID: -2468698709234664245}
   m_Layer: 10
   m_Name: Bed
   m_TagString: Untagged
@@ -475,3 +476,16 @@ MonoBehaviour:
   ElectricityAmount: 2
   MaterialElementID: 1
   ChildRenderer: {fileID: 6482346348811880942}
+--- !u!114 &-2468698709234664245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008210754210296252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 10

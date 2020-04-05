@@ -8,7 +8,27 @@ public class StoreSuckables : MonoBehaviour
     public VacuumSuck Vacuum;
     public LayerMask CollectMask;
 
-    private void OnTriggerEnter(Collider other)
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (Input.GetMouseButton(0))
+    //    {
+    //        if (((1 << other.gameObject.layer) & CollectMask) != 0)
+    //        {
+    //            var getSucked = other.gameObject.GetComponent<GetSucked>();
+
+    //            float boundSize = getSucked.ChildRenderer == null
+    //                ? other.gameObject.GetComponent<Renderer>().bounds.size.y
+    //                : getSucked.ChildRenderer.GetComponent<Renderer>().bounds.size.y;
+
+    //            Debug.Log(boundSize);
+
+    //            if (boundSize <= MinBoundSizeToStore)
+    //                Vacuum.StoreObject(other.gameObject);
+    //        }
+    //    }
+    //}
+
+    private void OnTriggerStay(Collider other)
     {
         if (Input.GetMouseButton(0))
         {

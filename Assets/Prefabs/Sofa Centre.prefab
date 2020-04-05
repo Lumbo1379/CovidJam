@@ -247,6 +247,7 @@ GameObject:
   - component: {fileID: 6788121909060513706}
   - component: {fileID: 744866217052763773}
   - component: {fileID: 4382377986095438272}
+  - component: {fileID: -3239281146048031378}
   m_Layer: 10
   m_Name: Sofa Centre
   m_TagString: Untagged
@@ -317,3 +318,16 @@ MonoBehaviour:
   ElectricityAmount: 2
   MaterialElementID: 1
   ChildRenderer: {fileID: 2072069608788328142}
+--- !u!114 &-3239281146048031378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7217479022985760080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 8

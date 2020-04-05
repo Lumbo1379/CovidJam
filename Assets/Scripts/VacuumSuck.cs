@@ -16,6 +16,7 @@ public class VacuumSuck : MonoBehaviour
     public Transform Meter;
     public Transform SuckOrigin;
     public LayerMask SuckMask;
+    public CatalogueContents CatalogueContents;
 
     private Camera _camera;
     private List<GameObject> _currentAttractedObjects;
@@ -121,7 +122,8 @@ public class VacuumSuck : MonoBehaviour
         obj.SetActive(false);
 
         _storedObjects.Add(obj);
-        _currentAttractedObjects.Remove(obj); 
+        _currentAttractedObjects.Remove(obj);
+        CatalogueContents.RemoveSuckedObjectInside(obj);
     }
 
     private void ShootStoredObject()

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1221093008078741039}
   - component: {fileID: 1221093008078741038}
   - component: {fileID: 1221093008078741037}
+  - component: {fileID: -3311317557769747371}
   m_Layer: 10
   m_Name: Bar Stool
   m_TagString: Untagged
@@ -80,6 +81,19 @@ MonoBehaviour:
   ElectricityAmount: 2
   MaterialElementID: 3
   ChildRenderer: {fileID: 8045651525086952386}
+--- !u!114 &-3311317557769747371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221093008078741035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 5
 --- !u!1 &8045651525086952386
 GameObject:
   m_ObjectHideFlags: 0

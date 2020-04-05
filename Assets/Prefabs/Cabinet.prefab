@@ -793,6 +793,7 @@ GameObject:
   - component: {fileID: 7833152700685735667}
   - component: {fileID: 4362335360118155762}
   - component: {fileID: 8151277518777094953}
+  - component: {fileID: -6594329538773771982}
   m_Layer: 10
   m_Name: Cabinet
   m_TagString: Untagged
@@ -870,3 +871,16 @@ MonoBehaviour:
   ElectricityAmount: 2
   MaterialElementID: 1
   ChildRenderer: {fileID: 4443467764962233497}
+--- !u!114 &-6594329538773771982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597756807998796521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae1dc44f2a8b242adc61c92e4a0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HouseItem: 6
